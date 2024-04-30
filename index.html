@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>Museum Cost Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <script src="/js/script.js"></script>
+    <h1>Museum Cost Calculator</h1>
+    <br>
+    <p>When you come on tuesdays or thursdays, you get a discount!</p>
+    <center>
+      <table>
+        <tr>
+          <th>
+            <img src="images/MuseumImage.jfif" style="width: 250px;"> 
+          </th>
+          <td>
+            <p>Enter your age:</p> <br>
+            <input id="age" placeholder="(Year)" type="number" step="1">
+            <br>
+            <p>Enter the day you are planning to visit:</p>
+            <select name="day" id="day">
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              <option value="sunday">Sunday</option>
+            </select>
+            <br>
+            <br>
+            <button onclick="DetermineCost()" id="Submit">Submit</button>
+            <br>
+            <div id="Output"> <p>Result:</p> </div>
+            <div id="Result"></div>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
